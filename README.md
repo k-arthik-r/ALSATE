@@ -90,7 +90,57 @@ Project Execution
 
 ## Setup
 
+### Step 1 : Restrict the System to produce only Level 4 and below logs.
 
+### Step 2 : Download the Quantized Model
+
+- Fine Tuned and Quantized Model: k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF
+- Download the Fine tuned and quantized model by clicking [Here](https://huggingface.co/k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF/resolve/main/llama-3.2-3b-sys-log-analysis-alsate-q4_k_m.gguf?download=true)
+- To Know More about Quantized Model Click [Here]().
+
+### Step 3 : Setup the Repository
+
+- Inside in your Linux Distribution, select a location for the project in any easily accessible location(Like Desktop).
+- Open a bash terminal in the selected location, Initialize an empty git repository and clone the repository using,
+  
+  ```bash
+      git init
+  ```
+  
+  ```bash
+      https://github.com/k-arthik-r/ALSATE.git
+  ```
+- A folder with name "ALSATE" will be created.
+- Move the downloaded model(From Step 2) into the ALSATE Folder. 
+- Navigate to the ALSATE Folder.
+ 
+### Step 4 : Create a Python Virtual Env and install the requirements.
+- Inside ALSATE folder open a bash terminal.
+- If pip is not in your system,
+  
+  ```bash
+      sudo apt-get install python-pip
+  ```
+- Then install virtualenv,
+  
+  ```bash
+    pip3 install virtualenv
+  ```
+- create a python virtual environment with the name *env*.
+  
+  ```bash
+    python3 -m venv env
+  ```
+- Activate the Virtual Environment.
+    
+  ```bash
+    source env/bin/activate
+  ```
+- Install the requirments from the [requirements.txt](requirements.txt)
+  
+  ```bash
+    pip3 install -r requirements.txt
+  ```
 
 ----------------------------
 
