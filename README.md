@@ -49,7 +49,7 @@ Huggingface Account
 Oracle Virtual Box 7.1.4 (Recommended) (Any Virtual Engine with latest Versions can also be used)
 
 <a href="https://download.virtualbox.org/virtualbox/7.1.4/Oracle_VirtualBox_Extension_Pack-7.1.4.vbox-extpack" alt="huggingface">
-      <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
+      <img src="https://img.shields.io/badge/VirtualBox-2F61B4?style=for-the-badge&logo=virtualbox&logoColor=white"></a>
 
 <br>
 <br>
@@ -57,6 +57,7 @@ Oracle Virtual Box 7.1.4 (Recommended) (Any Virtual Engine with latest Versions 
 ### Virtal Machine Level Requirements
 
 Ubuntu 24.04.1 (Recommended) (Any other Linux Distribution or any other latest version of the Ubuntu can also be used)
+
 <a href="https://ubuntu.com/download/desktop/thank-you?version=24.04.1&architecture=amd64&lts=true" alt="huggingface">
       <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
 
@@ -74,16 +75,25 @@ Python 3.9.13 (Recommended)
 <br>
 
 python-pip
-virtualenv
+
+<a href="https://pypi.org/project/pip/" alt="python">
+        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
 
 CuRL
+
+<a href="https://curl.se/" alt="curl">
+        <img src="https://img.shields.io/badge/CURL-073551?style=for-the-badge&logo=curl&logoColor=white" /></a>
+
 Git
+
+<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
+        <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" /></a>
 
 
 Homebrew (Recommended)
 
 <a href="https://www.python.org/downloads/release/python-3913/" alt="python">
-        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
+        <img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=ffdd54" /></a>
 
 To Install, open a bash terminal and execute these,
 ```bash
