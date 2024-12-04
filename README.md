@@ -36,66 +36,81 @@ The Project Focus on 5 Levels of System Logs, namely:
 ## Requirments
 
 ### Web Level Requirements
-Huggingface Account
-
-<a href="https://www.huggingface.co/" alt="huggingface">
+- Huggingface Account
+  
+  <a href="https://www.huggingface.co/" alt="huggingface">
       <img src="https://custom-icon-badges.demolab.com/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface-logo"></a>
-
-<br>
 <br>
 
 ### System Level Requirements (Only for Windows and MAC)
 
-Oracle Virtual Box 7.1.4 (Recommended) (Any Virtual Engine with latest Versions can also be used)
+- Oracle Virtual Box 7.1.4 (Recommended) (Any Virtual Engine with latest the lersions can also be used)
 
-<a href="https://download.virtualbox.org/virtualbox/7.1.4/Oracle_VirtualBox_Extension_Pack-7.1.4.vbox-extpack" alt="huggingface">
+  <a href="https://download.virtualbox.org/virtualbox/7.1.4/Oracle_VirtualBox_Extension_Pack-7.1.4.vbox-extpack" alt="huggingface">
       <img src="https://img.shields.io/badge/VirtualBox-2F61B4?style=for-the-badge&logo=virtualbox&logoColor=white"></a>
-
-<br>
 <br>
 
 ### Virtal Machine Level Requirements
 
-Ubuntu 24.04.1 (Recommended) (Any other Linux Distribution or any other latest version of the Ubuntu can also be used)
+- Ubuntu 24.04.1 (Recommended) (Any other Linux Distribution or any other latest version of the Ubuntu can also be used)
 
-<a href="https://ubuntu.com/download/desktop/thank-you?version=24.04.1&architecture=amd64&lts=true" alt="huggingface">
+  <a href="https://ubuntu.com/download/desktop/thank-you?version=24.04.1&architecture=amd64&lts=true" alt="huggingface">
       <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
-
-<br>
 <br>
 
 ### Linux Distribution Level Requirements
 
-Python 3.9.13 (Recommended) 
+- Python 3.12.3 (Recommended) 
 
-<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
+  <a href="https://www.python.org/downloads/release/python-3123/" alt="python">
         <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
-
-<br>
 <br>
 
-python-pip
+- python-pip 24.0 (Recommended)
 
-<a href="https://pypi.org/project/pip/" alt="python">
+  <a href="https://pypi.org/project/pip/" alt="python">
         <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
+        
+  To install pip, use:
+  
+  ```bash
+  sudo apt-get install python-pip
+  ```
+  
+<br>
 
-CuRL
+- cURL 8.11.0 (Recommended)
 
-<a href="https://curl.se/" alt="curl">
+  <a href="https://curl.se/" alt="curl">
         <img src="https://img.shields.io/badge/CURL-073551?style=for-the-badge&logo=curl&logoColor=white" /></a>
 
-Git
+  To install cURL, use:
 
-<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
+  ```bash
+  sudo apt-get install curl
+  ```
+  
+<br>
+
+- git 2.43.0 (Recommended)
+
+  <a href="https://www.python.org/downloads/release/python-3913/" alt="python">
         <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" /></a>
 
+  To install git, use:
+  ```bash
+  sudo apt install git-all
+  ```
+  
+<br>
 
-Homebrew (Recommended)
+- Homebrew 4.4.8 (Recommended)
 
-<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
+  <a href="https://www.python.org/downloads/release/python-3913/" alt="python">
         <img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=ffdd54" /></a>
 
-To Install, open a bash terminal and execute these,
+To Install Homebrew, open a bash terminal and execute these,
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -108,35 +123,18 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 ```bash
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 ```
-```bash
 
-```
-
-
-<br>
-<br>    
 ---------------------------
 
 ## Modules/Libraries Used
 
-All The Modules/Libraries Used in the Project can be installed using [requirements.txt](requirements.txt)
-
-LLM Finetuning
-- transformers
-- bitsandbytes
-- peft
-- os
-- torch
-- wandb
-- datasets
-- trl
-
-Project Execution
+All The Modules/Libraries Used in the project can be installed using [requirements.txt](requirements.txt)
 - re
 - time
 - json
 - requests
 - streamlit
+- subprocess
 - streamlit.components.v1
 
 ----------------------------
@@ -145,6 +143,22 @@ Project Execution
 
 ### Step 1 : Restrict the System to produce only Level 4 and below logs.
 
+- Since we are focussing only on Level 4 and below sys-logs as level 5 and above sys-logs produce no potential threat, we are required to access only level 4 and below sys-logs and ignore level 5 and level 6 logs. we can achive this by changing the journalctl configuration in the linux systems.
+- To set the system to syore only level 4 and below logs, open your operating system and navigate to,
+  
+  ```bash
+  /etc/systemd/journald.conf
+  ```
+- open the journald.conf in editable mode and scroll down in that file.
+- in the configuration list you can notice two fields such as:
+  - MaxLevelStore and
+  - MaxLevelSyslog
+- now set both of them to *warning*
+  ```bash
+  #MaxLevelStore = warning
+  #MaxLevelSyslog = warning
+- save the file and restart the operating system.
+  
 ### Step 2 : Download the Quantized Model
 
 - Fine Tuned and Quantized Model: k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF
@@ -169,12 +183,7 @@ Project Execution
  
 ### Step 4 : Create a Python Virtual Env and install the requirements.
 - Inside ALSATE folder open a bash terminal.
-- If pip is not in your system,
-  
-  ```bash
-      sudo apt-get install python-pip
-  ```
-- Then install virtualenv,
+- Install virtualenv,
   
   ```bash
     pip3 install virtualenv
@@ -307,5 +316,5 @@ Use Streamlit, a Python library for creating interactive web applications, to vi
 
 ![alsate-working-drawio](https://github.com/user-attachments/assets/c34b8842-5f85-4430-b802-c573a917a000)
 
-
 ---------------------------------
+
