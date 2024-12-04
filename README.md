@@ -158,6 +158,7 @@ All The Modules/Libraries Used in the project can be installed using [requiremen
   ```bash
   #MaxLevelStore = warning
   #MaxLevelSyslog = warning
+  ```
 - save the file and restart the operating system.
   
 ### Step 2 : Download the Quantized Model
@@ -172,11 +173,11 @@ All The Modules/Libraries Used in the project can be installed using [requiremen
 - Open a bash terminal in the selected location, Initialize an empty git repository and clone the repository using,
   
   ```bash
-      git init
+  git init
   ```
   
   ```bash
-      https://github.com/k-arthik-r/ALSATE.git
+  https://github.com/k-arthik-r/ALSATE.git
   ```
 - A folder with name "ALSATE" will be created.
 - Move the downloaded model(From Step 2) into the ALSATE Folder. 
@@ -187,22 +188,22 @@ All The Modules/Libraries Used in the project can be installed using [requiremen
 - Install virtualenv,
   
   ```bash
-    pip3 install virtualenv
+  pip3 install virtualenv
   ```
 - create a python virtual environment with the name *env*.
   
   ```bash
-    python3 -m venv env
+  python3 -m venv env
   ```
 - Activate the Virtual Environment.
     
   ```bash
-    source env/bin/activate
+  source env/bin/activate
   ```
 - Install the requirments from the [requirements.txt](requirements.txt)
   
   ```bash
-    pip3 install -r requirements.txt
+  pip3 install -r requirements.txt
   ```
 
 ----------------------------
@@ -223,34 +224,40 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 - Within the Current directory open a new bash terminal.
 - Install llama.cpp using brew,
   ```bash
-    brew install llama.cpp
+  brew install llama.cpp
   ```
 - Activate the LLM Server Using,
   ```bash
-    llama-server -m llama-3.2-3b-sys-log-analysis-alsate-q4_k_m.gguf
+  llama-server -m llama-3.2-3b-sys-log-analysis-alsate-q4_k_m.gguf
   ```
   Note: After Executing the above command you may have to wait for 10-15 min to get the model completely activated and get running.
 -  You can check the activation of the model either by visiting the link where the model is being running - Usually in the port 8080 or 8081, so visit http://127.0.0.1:8080 or http://127.0.0.1:8081, which will redirect you to a chat interface like the below snapshot.
 
+![Screenshot 2024-12-04 220654](https://github.com/user-attachments/assets/684ccbc7-9b9a-4d88-a176-050b24ac7cb8)
+
 - or by sending a curl request,
   ```bash
-    curl http://localhost:8080/v1/chat/completions \
-    -H "Content-Type: application/json" \
-    -H "Authorization: Bearer no-key" \
-    -d '{
-    "messages": [
-    {
-            "role": "system",
-            "content": "Your name is "ALSATE",you are an advanced syslog parsing and analysis tool. Your task is to analyze provided system logs, identify potential causes of their generation, and detect any security threats or anomalies. If threats are found, suggest precise remediation steps. Respond only when the input is a valid system log; otherwise, reply with: Input does not appear to be a valid system log. Unable to assist."
-        },
-        {
-            "role": "user",
-            "content": "Nov 05 22:28:18 ubuntu kernel: workqueue: blk_mq_requeue_work hogged CPU for >10000us 16 times, consider switching to WQ_UNBOUND"
-        }
-      ]
-    }'
+  curl http://localhost:8080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer no-key" \
+  -d '{
+  "messages": [
+  {
+          "role": "system",
+          "content": "Your name is ALSATE,you are an advanced syslog parsing and analysis tool. Your task is to analyze provided system logs, identify potential causes of their generation, and detect any security threats or anomalies. If threats are found, suggest precise remediation steps. Respond only when the input is a valid system log; otherwise, reply with: Input does not appear to be a valid system log. Unable to assist."
+      },
+      {
+          "role": "user",
+          "content": "Nov 05 22:28:18 ubuntu kernel: workqueue: blk_mq_requeue_work hogged CPU for >10000us 16 times, consider switching to WQ_UNBOUND"
+      }
+    ]
+  }'
   ```
-  Note: if you use a curl request method, you may have to wait for 2 to 3 Minutes before you get any response depending on your current system status. you will get a     responce similar to the snapshot provided below. Disclaimer* - This is only when the llm is activated in http://localhost:8080, you may need to change the link if your LLM is activated in any other address.
+  Note: if you use a curl request method, you may have to wait for 2 to 3 Minutes before you get any response depending on your current system status. you will get a     responce similar to the snapshot provided below.
+
+![Screenshot 2024-12-04 214110](https://github.com/user-attachments/assets/8dd7369b-c54b-454b-8107-8c67fc79318d)
+
+Disclaimer* - This is only when the llm is activated in http://localhost:8080, you may need to change the link if your LLM is activated in any other address.
 
 ### Step 2 : Read Sys-Logs and save it in a dynamic text file.
 
@@ -258,12 +265,12 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 - activate python virtual environment,
   
   ```bash
-    source bin/activate
+  source bin/activate
   ```
 - execute read.py,
   
   ```bash
-    python3 read.py
+  python3 read.py
   ```
 
 - After the Execution of this you could see a new text file with name *live_logs.txt* being created and sys-logs being added in that file. 
@@ -274,12 +281,12 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 - activate python virtual environment,
   
   ```bash
-    source bin/activate
+  source env/bin/activate
   ```
 - execute main.py,
   
   ```bash
-    sreamlit run main.py
+  sreamlit run main.py
   ```
 - After the Execution of this you could see a Streamlit Application running in localhost.
 
@@ -375,5 +382,3 @@ Use Streamlit, a Python library for creating interactive web applications, to vi
 ## Feedback
 If you have any feedback, please reach out to us at voidex.developer@gmail.com .
 You are also welcomed to add new features by creating Pull Requests.
-
-
