@@ -5,18 +5,29 @@
 ------------------------
 
 <div align="center">
-  <a><img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"></a> &nbsp;
-  <a><img src="https://img.shields.io/badge/google colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white"></a> &nbsp;
-  <a><img src="https://custom-icon-badges.demolab.com/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface-logo"></a> &nbsp;
-  <a><img src="https://img.shields.io/badge/Llama 3.2 3B-0467DF?style=for-the-badge&logo=meta&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Llama 3.2 3B Instruct-0467DF?style=for-the-badge&logo=meta&logoColor=white"></a> &nbsp;
   <a><img src="https://custom-icon-badges.demolab.com/badge/Transformer-gold?style=for-the-badge&logo=package&logoColor=black"></a> &nbsp;
-  <a><img src="https://custom-icon-badges.demolab.com/badge/Langchain-FBEEE9?style=for-the-badge&logo=ln"></a> &nbsp;
-  <a><img src="https://custom-icon-badges.demolab.com/badge/Chroma DB-999999?style=for-the-badge&logo=chroma-logo"></a> &nbsp;
-  <a><img src="https://custom-icon-badges.demolab.com/badge/Samantara-FFFFFF?style=for-the-badge&logo=sam"></a> &nbsp;
-  <a><img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white"></a> &nbsp;
-  <a><img src="https://custom-icon-badges.demolab.com/badge/Innosetup-FAEBD7?style=for-the-badge&logo=innosetup"></a> &nbsp;
   <a><img src="https://custom-icon-badges.demolab.com/badge/PEFT-99EDC3?style=for-the-badge&logo=randforest"></a> &nbsp;
-  <a><img src="https://custom-icon-badges.demolab.com/badge/LoRA-7BD3EA?style=for-the-badge&logo=randforest"></a> &nbsp;
+  <a><img src="https://custom-icon-badges.demolab.com/badge/LoRA-53AC56?style=for-the-badge&logo=minetest&logoColor=000000"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"></a> &nbsp;
+  <a><img src="https://custom-icon-badges.demolab.com/badge/Streamlit-000000?style=for-the-badge&logo=streamlit"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Journalctl-51BB7B?style=for-the-badge&logo=local&logoColor=white"></a> &nbsp;
+  <a><img src="https://custom-icon-badges.demolab.com/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/WSL-68BC71?style=for-the-badge&logo=ubuntu&logoColor=black"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/VirtualBox-2F61B4?style=for-the-badge&logo=virtualbox&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Ngrok-1F1E37?style=for-the-badge&logo=ngrok&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/W and B-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Quantization-Q4-red?style=for-the-badge"></a> &nbsp;
+  <a><img src="https://custom-icon-badges.demolab.com/badge/GGML_ORG-000000?style=for-the-badge&logo=ggml-org"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/CURL-073551?style=for-the-badge&logo=curl&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Google Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Google Apps Script-4285F4?style=for-the-badge&logo=googleappsscript&logoColor=white"></a> &nbsp;
+  <a><img src="https://custom-icon-badges.demolab.com/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface-logo"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"></a> &nbsp;
 </div>
 
 ------------------------
