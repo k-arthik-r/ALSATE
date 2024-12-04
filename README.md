@@ -128,7 +128,7 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
     "messages": [
     {
             "role": "system",
-            "content": "Your name is "ALSATE",you are an advanced syslog parsing and analysis tool. Your task is to analyze provided system logs, identify potential causes               of their generation, and detect any security threats or anomalies. If threats are found, suggest precise remediation steps. Respond only when the input is a                 valid system log; otherwise, reply with: 'Input does not appear to be a valid system log. Unable to assist.'"
+            "content": "Your name is "ALSATE",you are an advanced syslog parsing and analysis tool. Your task is to analyze provided system logs, identify potential causes of their generation, and detect any security threats or anomalies. If threats are found, suggest precise remediation steps. Respond only when the input is a valid system log; otherwise, reply with: Input does not appear to be a valid system log. Unable to assist."
         },
         {
             "role": "user",
@@ -155,7 +155,7 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 
 - After the Execution of this you could see a new text file with name *live_logs.txt* being created and sys-logs being added in that file. 
 
-### Step 3 : Fetch Sys-Logs from dynamic text file, analyse it using the fine tuned llm and display it in the streamlit interface.
+### Step 3 : Fetch Sys-Logs from dynamic text file, analyse it using the fine tuned llm and display it in the streamlit interface along with its cause and remediation.
 
 - Within the Current directory open a new bash terminal.
 - activate python virtual environment,
@@ -166,8 +166,40 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 - execute main.py,
   
   ```bash
-    python3 main.py
+    sreamlit run main.py
   ```
-- After the Execution of this you could see a Streamlit Application running in local host.
+- After the Execution of this you could see a Streamlit Application running in localhost.
 
 ----------------------------
+
+## Working 
+
+#### 1. Extract Logs with Specific Threat Level:
+Use journalctl, a command-line tool for querying and displaying logs from the systemd journal, to filter logs based on a specific threat level. In this case, you're looking for logs with threat levels 4 and below. This helps in narrowing down the logs to a particular set of interest based on severity.
+
+#### 2. Dump Extracted Logs into Live Logs File:
+Once you have filtered the logs, redirect or save them into a "live logs" file. This file serves as a real-time repository of logs that can be monitored, analyzed, and processed further.
+
+#### 3. Fetch the First Log from the Live Logs File:
+After the live logs file is populated, extract the first log entry. This log entry will be the starting point for further analysis.
+
+#### 4. Query the Log with Llama-3.2-3B Fine-Tuned Model:
+Pass the fetched log to a fine-tuned machine learning model (Llama-3.2-3B in this case) for analysis. The model is expected to process the log and generate a response that contains key insights, such as the heading, log content, possible cause, and recommended remediation.
+
+#### 5. Receive and Parse the Response:
+After receiving the model's response, use predefined regular expressions to parse the response. The goal here is to extract specific details such as:
+- **Heading:** A brief title or summary of the log's content.
+- **Log:** The main content or description of the log entry.
+- **Cause:** The potential reason behind the issue or event recorded in the log.
+- **Remediation:** Suggested actions to resolve or mitigate the problem identified in the log.
+
+#### 6. Append the Parsed Details to the Live Logs List:
+After parsing the response, append the extracted details (heading, log, cause, and remediation) to the live logs list. This allows you to continuously build and maintain a collection of structured log information for further analysis.
+
+#### 7. Delete(Update) the Fetched Log from the Live Log File:
+Once the first log entry has been processed and its details have been extracted and stored, delete it from the live logs file. This ensures that only unprocessed logs remain in the file for future querying and analysis.
+
+#### 8. Represent the Records in Streamlit Interface:
+Use Streamlit, a Python library for creating interactive web applications, to visualize and display the records. The live logs list, which now contains structured and parsed information, can be shown in a user-friendly interface, allowing users to easily view and interact with the log records, including their heading, content, cause, and remediation.
+
+---------------------------------
