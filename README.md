@@ -17,19 +17,20 @@
   <a><img src="https://custom-icon-badges.demolab.com/badge/Innosetup-FAEBD7?style=for-the-badge&logo=innosetup"></a> &nbsp;
   <a><img src="https://custom-icon-badges.demolab.com/badge/PEFT-99EDC3?style=for-the-badge&logo=randforest"></a> &nbsp;
   <a><img src="https://custom-icon-badges.demolab.com/badge/LoRA-7BD3EA?style=for-the-badge&logo=randforest"></a> &nbsp;
-
 </div>
 
 ------------------------
 
 ALSATE an acronym for "Analysis of Linux System Logs for Active Threat detection and Evaluation" is an automated log monitoring system that continuously analyzes Linux sys-logs for threat levels 4 and below, leveraging a fine-tuned Large Language Model (LLM) to detect issues, provide explanations, and recommend actionable remediation measures to enhance system security and efficiency.
 
-The Project Focus on 5 Levels of System Logs, namely:
+ALSATE prioritizes the following five levels of system logs:
 - L0 - EMERGENCY
 - L1 - ALERT
 - L2 - CRITICAL
 - L3 - ERROR
 - L4 - WARNING
+
+Logs at levels 5 and above (such as Notice or Info) are not analyzed, as they typically indicate no significant threat.
 
 ------------------------
 
@@ -71,7 +72,7 @@ The Project Focus on 5 Levels of System Logs, namely:
   <a href="https://pypi.org/project/pip/" alt="python">
         <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
         
-  To install pip, use:
+  To Install python-pip, open a bash terminal and execute this,
   
   ```bash
   sudo apt-get install python-pip
@@ -84,7 +85,7 @@ The Project Focus on 5 Levels of System Logs, namely:
   <a href="https://curl.se/" alt="curl">
         <img src="https://img.shields.io/badge/CURL-073551?style=for-the-badge&logo=curl&logoColor=white" /></a>
 
-  To install cURL, use:
+  To Install cURL, open a bash terminal and execute this,
 
   ```bash
   sudo apt-get install curl
@@ -97,7 +98,7 @@ The Project Focus on 5 Levels of System Logs, namely:
   <a href="https://www.python.org/downloads/release/python-3913/" alt="python">
         <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" /></a>
 
-  To install git, use:
+  To Install git, open a bash terminal and execute this,
   ```bash
   sudo apt install git-all
   ```
@@ -109,33 +110,33 @@ The Project Focus on 5 Levels of System Logs, namely:
   <a href="https://www.python.org/downloads/release/python-3913/" alt="python">
         <img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=ffdd54" /></a>
 
-To Install Homebrew, open a bash terminal and execute these,
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-```bash
-test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-```
-```bash
-test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-```
-```bash
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
-```
+  To Install Homebrew, open a bash terminal and execute these,
+  
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+  ```bash
+  test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+  ```
+  ```bash
+  test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  ```
+  ```bash
+  echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+  ```
 
 ---------------------------
 
 ## Modules/Libraries Used
 
 All The Modules/Libraries Used in the project can be installed using [requirements.txt](requirements.txt)
-- re
-- time
-- json
-- requests
-- streamlit
-- subprocess
-- streamlit.components.v1
+- `re`
+- `time`
+- `json`
+- `requests`
+- `streamlit`
+- `subprocess`
+- `streamlit.components.v1`
 
 ----------------------------
 
@@ -269,7 +270,7 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 
 ### Step 3 : Fetch Sys-Logs from dynamic text file, analyse it using the fine tuned llm and display it in the streamlit interface along with its cause and remediation.
 
-- Within the Current directory open a new bash terminal.
+- Within the current directory open a new bash terminal.
 - activate python virtual environment,
   
   ```bash
@@ -317,4 +318,62 @@ Use Streamlit, a Python library for creating interactive web applications, to vi
 ![alsate-working-drawio](https://github.com/user-attachments/assets/c34b8842-5f85-4430-b802-c573a917a000)
 
 ---------------------------------
+
+## Key Features
+
+- **Automated Syslog Monitoring**  
+   - Real-time tracking of Linux sys-logs, focusing on high-severity threats (levels 4 and below).  
+   - Continuous analysis without requiring manual intervention.
+
+- **AI-Driven Analysis**  
+   - Utilizes a fine-tuned Large Language Model (LLM) for log analysis.  
+   - Identifies vulnerabilities, determines root causes, and suggests actionable remediation steps.  
+
+- **Proactive Threat Management**  
+   - Provides early detection of potential threats to prevent escalation.  
+   - Generates actionable insights to prioritize responses effectively.  
+
+- **Efficient Log Management**  
+   - Reduces operational overhead with automated log processing.  
+   - Enhances security and operational efficiency by minimizing manual efforts.
+
+- **Low Infrastructure Requirements**  
+   - Optimized to run efficiently on resource-constrained hardware, such as devices with minimal RAM, storage, and processing power.  
+   - Eliminates the need for expensive components or high-end systems, making it accessible for organizations with limited budgets.
+
+- **User-Friendly Interface**  
+   - Presents processed log data and insights through an intuitive dashboard for easy decision-making.  
+
+- **Scalability and Adaptability**  
+   - Capable of handling logs from multiple Linux systems.  
+   - Designed to adapt to various enterprise environments and applications.  
+
+- **Optimization Features**  
+   - Fine-tuned using Llama 3.2 3B Instruct Base Model with Low Rank Adaptation (LoRA) for resource efficiency.  
+   - Quantization techniques enable deployment on devices with constrained resources.  
+
+- **Expected Outcomes**  
+   - Enhanced security posture and operational efficiency.  
+   - Automated log management with proactive issue resolution.  
+   - Data-driven insights for informed decision-making.
+
+
+---------------------------------
+
+## Recording
+
+[demo.webm](https://github.com/user-attachments/assets/012f759d-1423-48a7-aa87-40e05fae3318)
+
+----------------------------
+
+## License
+
+[![Licence](https://img.shields.io/badge/LICENSE-Contributor_Consent_License(CCL)-red?style=for-the-badge)](./LICENSE)
+
+----------------------------
+
+## Feedback
+If you have any feedback, please reach out to us at voidex.developer@gmail.com .
+You are also welcomed to add new features by creating Pull Requests.
+
 
