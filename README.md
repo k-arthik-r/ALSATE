@@ -34,14 +34,8 @@ The Project Focus on 5 Levels of System Logs, namely:
 ------------------------
 
 ## Requirments
-Python 3.9.13 (Recommended) 
 
-<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
-        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
-
-<br>
-<br>
-
+### Web Level Requirements
 Huggingface Account
 
 <a href="https://www.huggingface.co/" alt="huggingface">
@@ -50,18 +44,67 @@ Huggingface Account
 <br>
 <br>
 
-A Linux Distribution (UBUNTU on Oracle Virtual Box is Preffered) 
+### System Level Requirements (Only for Windows and MAC)
 
-Run a Linux Disrtibution on your PC Using a VM Engine such as Oracle Virual Box, VMware, etc,.. or using WSL on windows or using Dual Boot Mode.
-
-<a href="https://ubuntu.com/download/desktop/thank-you?version=24.04.1&architecture=amd64&lts=true" alt="huggingface">
-      <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
+Oracle Virtual Box 7.1.4 (Recommended) (Any Virtual Engine with latest Versions can also be used)
 
 <a href="https://download.virtualbox.org/virtualbox/7.1.4/Oracle_VirtualBox_Extension_Pack-7.1.4.vbox-extpack" alt="huggingface">
       <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
 
-We have used Ubuntu 24.04.1 LTS and Oracle VirtualBox 7.1.4 to run this application.
-        
+<br>
+<br>
+
+### Virtal Machine Level Requirements
+
+Ubuntu 24.04.1 (Recommended) (Any other Linux Distribution or any other latest version of the Ubuntu can also be used)
+<a href="https://ubuntu.com/download/desktop/thank-you?version=24.04.1&architecture=amd64&lts=true" alt="huggingface">
+      <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
+
+<br>
+<br>
+
+### Linux Distribution Level Requirements
+
+Python 3.9.13 (Recommended) 
+
+<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
+        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
+
+<br>
+<br>
+
+python-pip
+virtualenv
+
+CuRL
+Git
+
+
+Homebrew (Recommended)
+
+<a href="https://www.python.org/downloads/release/python-3913/" alt="python">
+        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
+
+To Install, open a bash terminal and execute these,
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+```bash
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+```
+```bash
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
+```bash
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+```
+```bash
+
+```
+
+
+<br>
+<br>    
 ---------------------------
 
 ## Modules/Libraries Used
