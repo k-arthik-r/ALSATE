@@ -305,4 +305,7 @@ Once the first log entry has been processed and its details have been extracted 
 #### 8. Represent the Records in Streamlit Interface:
 Use Streamlit, a Python library for creating interactive web applications, to visualize and display the records. The live logs list, which now contains structured and parsed information, can be shown in a user-friendly interface, allowing users to easily view and interact with the log records, including their heading, content, cause, and remediation.
 
+![alsate-working-drawio](https://github.com/user-attachments/assets/c34b8842-5f85-4430-b802-c573a917a000)
+
+
 ---------------------------------
