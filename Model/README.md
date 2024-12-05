@@ -141,7 +141,7 @@ Remediation -
 
 ## Fine Tuning
 
-- We have used **LoRA (Low-Rank Adaptation)** to fine-tune the **Llama 3.2 3B Instruct** model effectively and efficiently. LoRA is a powerful fine-tuning technique designed to optimize the performance of large language models while reducing resource consumption.
+We have used **LoRA (Low-Rank Adaptation)** to fine-tune the **Llama 3.2 3B Instruct** model effectively and efficiently. LoRA is a powerful fine-tuning technique designed to optimize the performance of large language models while reducing resource consumption.
 
 ### What is LoRA?
 **LoRA (Low-Rank Adaptation)** is a fine-tuning method that focuses on updating only a small subset of parameters in a pre-trained model, rather than all the parameters. It introduces low-rank matrices into specific layers of the model (usually attention layers), allowing significant computational and memory efficiency.
