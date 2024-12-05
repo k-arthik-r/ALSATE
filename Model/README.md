@@ -226,6 +226,23 @@ To quantize the model, we used GGML-ORG's repository, which you can access here.
 
 ![model tree](https://github.com/user-attachments/assets/dfaa13bc-d2ac-413b-af67-76a17ce2d0a3)
 
+-------------------------------
+
+## Modle and Model Card
+
+Access the model and model card here:
+
+- **Base Model** : *meta-llama/Llama-3.2-3B* : [here](https://huggingface.co/meta-llama/Llama-3.2-3B)
+
+- **Finetuned Model v1** : *meta-llama/Llama-3.2-3B-Instruct* : [here](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
+
+- **Finetuned Model v2** : *k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate* : [here](https://huggingface.co/k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate)
+
+- **Quantized Model v1** : *k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_S-GGUF* : [here](https://huggingface.co/k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_S-GGUF)
+
+- **Quantized Model v2** : *k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF* : [here](https://huggingface.co/k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF)
+  
+Note* - Focus on **Finetuned Model v2** and **Quantized Model v2**
 
 -------------------------------
 
