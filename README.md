@@ -392,7 +392,13 @@ Use Streamlit, a Python library for creating interactive web applications, to vi
 
 ## License
 
-[![Licence](https://img.shields.io/badge/LICENSE-Contributor_Consent_License(CCL)-red?style=for-the-badge)](./LICENSE)
+- For the code and streamlit application,
+  
+  [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
+- For the Model and Dataset,
+  
+  [![Licence](https://img.shields.io/badge/LICENSE-Contributor_Consent_License(CCL)-red?style=for-the-badge)](./Model/LICENSE)
 
 ----------------------------
 
