@@ -222,6 +222,13 @@ To quantize the model, we used GGML-ORG's repository, which you can access here.
 
 -------------------------------
 
+## Model Tree
+
+![model tree](https://github.com/user-attachments/assets/dfaa13bc-d2ac-413b-af67-76a17ce2d0a3)
+
+
+-------------------------------
+
 ## Hardware Used
 
 Nvidia T4 x 2 - GPU
