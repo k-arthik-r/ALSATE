@@ -24,6 +24,7 @@
   <a><img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"></a> &nbsp;
   <a><img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"></a> &nbsp;
   <a><img src="https://img.shields.io/badge/CURL-073551?style=for-the-badge&logo=curl&logoColor=white"></a> &nbsp;
+  <a><img src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=ffdd54"></a> &nbsp;
   <a><img src="https://img.shields.io/badge/Google Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white"></a> &nbsp;
   <a><img src="https://img.shields.io/badge/Google Apps Script-4285F4?style=for-the-badge&logo=googleappsscript&logoColor=white"></a> &nbsp;
   <a><img src="https://custom-icon-badges.demolab.com/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface-logo"></a> &nbsp;
@@ -244,7 +245,7 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
   Note: After Executing the above command you may have to wait for 10-15 min to get the model completely activated and get running.
 -  You can check the activation of the model either by visiting the link where the model is being running - Usually in the port 8080 or 8081, so visit http://127.0.0.1:8080 or http://127.0.0.1:8081, which will redirect you to a chat interface like the below snapshot.
 
-![Screenshot 2024-12-04 220654](https://github.com/user-attachments/assets/684ccbc7-9b9a-4d88-a176-050b24ac7cb8)
+  ![Screenshot 2024-12-04 220654](https://github.com/user-attachments/assets/684ccbc7-9b9a-4d88-a176-050b24ac7cb8)
 
 - or by sending a curl request,
   ```bash
@@ -266,9 +267,14 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
   ```
   Note: if you use a curl request method, you may have to wait for 2 to 3 Minutes before you get any response depending on your current system status. you will get a     responce similar to the snapshot provided below.
 
-![Screenshot 2024-12-04 214110](https://github.com/user-attachments/assets/8dd7369b-c54b-454b-8107-8c67fc79318d)
+  ![Screenshot 2024-12-04 214110](https://github.com/user-attachments/assets/8dd7369b-c54b-454b-8107-8c67fc79318d)
+  
+  Disclaimer* - This is only when the llm is activated in http://localhost:8080, you may need to change the link if your LLM is activated in any other address.
 
-Disclaimer* - This is only when the llm is activated in http://localhost:8080, you may need to change the link if your LLM is activated in any other address.
+- After Successfully activating the LLM Server, Add its location where its active in the .env file located at the root.
+  ```text
+  URL = http://localhost:8080
+  ```
 
 ### Step 2 : Read Sys-Logs and save it in a dynamic text file.
 
