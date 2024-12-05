@@ -52,6 +52,20 @@ Logs at levels 5 and above (such as Notice or Info) are not analyzed, as they ty
 
 ------------------------
 
+## Modules/Libraries Used
+
+All The Modules/Libraries Used in the project can be installed using [requirements.txt](requirements.txt)
+- `transformers`
+- `bitsandbytes`
+- `peft`
+- `os`
+- `torch`
+- `wandb`
+- `datasets`
+- `trl`
+
+----------------------------
+
 ## Platform used to fine tune the model
 
 - Kaggle Account
