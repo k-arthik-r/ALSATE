@@ -43,7 +43,7 @@ def extract_cause_and_remediation(response):
 
 def request_files(query):
 
-    url = URL + "v1/chat/completions"
+    url = URL + "/v1/chat/completions"
     headers = {"Content-Type": "application/json", "Authorization": "Bearer no-key"}
 
     data = {
