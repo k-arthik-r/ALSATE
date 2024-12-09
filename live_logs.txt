@@ -1,0 +1,7 @@
+Dec 04 22:07:42 Admin gnome-shell[1930]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+Dec 04 22:07:42 Admin dbus-daemon[748]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.104' (uid=1000 pid=2401 comm="/usr/bin/nautilus --gapplication-service" label="nautilus (unconfined)")
+Dec 04 22:07:42 Admin systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Dec 04 22:07:42 Admin dbus-daemon[748]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec 04 22:07:42 Admin systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+Dec 04 22:08:14 Admin systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Dec 04 22:08:15 Admin tracker-miner-fs-3[14364]: (tracker-extract-3:14364): GLib-GIO-WARNING **: 22:08:15.037: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
