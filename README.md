@@ -176,8 +176,8 @@ All The Modules/Libraries Used in the project can be installed using [requiremen
 ### Step 2 : Download the Quantized Model
 
 - Fine Tuned and Quantized Model: k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF
-- Download the Fine tuned and quantized model by clicking [Here](https://huggingface.co/k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF/resolve/main/llama-3.2-3b-sys-log-analysis-alsate-q4_k_m.gguf?download=true)
-- To Know More about Quantized Model Click [Here]().
+- Download the Fine tuned and quantized model by contacting developers at voidex.developer@gmail.com .
+- To Know More about Quantized Model Click [Here](/Model/README.md).
 
 ### Step 3 : Setup the Repository
 
