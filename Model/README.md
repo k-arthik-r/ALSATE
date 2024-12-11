@@ -161,10 +161,10 @@ We have used **LoRA (Low-Rank Adaptation)** to fine-tune the **Llama 3.2 3B Inst
 **LoRA (Low-Rank Adaptation)** is a fine-tuning method that focuses on updating only a small subset of parameters in a pre-trained model, rather than all the parameters. It introduces low-rank matrices into specific layers of the model (usually attention layers), allowing significant computational and memory efficiency.
 
 ### Why LoRA?  
-- **Efficiency**: Fine-tuning only a few parameters drastically reduces the memory and computational cost, making it suitable for large models like Llama 3.2.  
-- **Adaptability**: LoRA allows the base model to retain its general knowledge while specializing in a specific domain or task through efficient parameter updates.  
-- **Low Hardware Requirements**: LoRA reduces the GPU and memory requirements, enabling fine-tuning even on resource-constrained hardware.  
-- **Parameter Efficiency**: By introducing low-rank matrices, the number of trainable parameters is minimized while still achieving high performance.
+- **Efficiency**: Fine-tuning only a small subset of parameters significantly lowers memory and computational costs, making it ideal for large models like Llama 3.2. 
+- **Adaptability**: LoRA enables the base model to maintain its general knowledge while specializing in specific domains or tasks through efficient parameter updates. 
+- **Low Hardware Requirements**: LoRA reduces GPU and memory demands by fine-tuning a small subset of parameters using low-rank matrices. This approach minimizes resource usage, enabling fine-tuning even on hardware with limited capabilities.
+- **Parameter Efficiency**: By incorporating low-rank matrices, it minimizes the number of trainable parameters while maintaining excellent performance.
 
 ### How LoRA Works:
 1. **Decomposition**: In LoRA, weight updates are decomposed into low-rank matrices (e.g., `A` and `B`), where the rank is significantly smaller than the full size of the weight matrix.  
