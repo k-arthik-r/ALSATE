@@ -284,7 +284,7 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
 - activate python virtual environment,
   
   ```bash
-  source bin/activate
+  source env/bin/activate
   ```
 - execute read.py,
   
