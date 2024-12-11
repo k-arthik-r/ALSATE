@@ -39,7 +39,7 @@ The Model and the Dataset used has a very strict LICENSING Policy, we suggest yo
 
 ------------------------
 
-ALSATE an acronym for "Analysis of Linux System Logs for Active Threat detection and Evaluation" is an automated log monitoring system that continuously analyzes Linux sys-logs for threat levels 4 and below, leveraging a fine-tuned Large Language Model (LLM) to detect issues, provide explanations, and recommend actionable remediation measures to enhance system security and efficiency.
+ALSATE an acronym for "Analysis of Linux System Logs for Active Threat Evaluation" is an automated log monitoring system that continuously analyzes Linux sys-logs for threat levels 4 and below, leveraging a fine-tuned Large Language Model (LLM) to detect issues, provide explanations, and recommend actionable remediation measures to enhance system security and efficiency.
 
 ALSATE prioritizes the following five levels of system logs:
 - L0 - EMERGENCY

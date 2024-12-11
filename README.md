@@ -156,8 +156,9 @@ All The Modules/Libraries Used in the project can be installed using [requiremen
 
 ### Step 1 : Restrict the System to produce only Level 4 and below logs.
 
-- Since we are focussing only on Level 4 and below sys-logs as level 5 and above sys-logs produce no potential threat, we are required to access only level 4 and below sys-logs and ignore level 5 and level 6 logs. we can achive this by changing the journalctl configuration in the linux systems.
-- To set the system to syore only level 4 and below logs, open your operating system and navigate to,
+- 
+Since our focus is exclusively on syslogs of severity level 4 and below, as logs with higher severity levels do not pose significant threats, we need to access only these critical logs while ignoring less severe entries. This can be achieved by modifying the journalctl configuration in Linux systems.
+- To set the system to store only level 4 and below logs, open your operating system and navigate to,
   
   ```bash
   /etc/systemd/journald.conf
@@ -176,8 +177,8 @@ All The Modules/Libraries Used in the project can be installed using [requiremen
 ### Step 2 : Download the Quantized Model
 
 - Fine Tuned and Quantized Model: k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF
-- Download the Fine tuned and quantized model by contacting developers at voidex.developer@gmail.com .
-- To Know More about Quantized Model Click [Here](/Model/README.md).
+- Download the Fine tuned and quantized model by clicking [Here](https://huggingface.co/k-arthik-r/llama-3.2-3b-sys-log-analysis-alsate-Q4_K_M-GGUF/resolve/main/llama-3.2-3b-sys-log-analysis-alsate-q4_k_m.gguf?download=true)
+- To Know More about Quantized Model Click [Here]().
 
 ### Step 3 : Setup the Repository
 
@@ -228,7 +229,7 @@ The execution of this project involves 3 Steps:
 To Activate the LLM Server we need a package called llama.cpp, 
 
 #### About llama.cpp
-Llama.cpp allows you to download and run inference on a GGUF simply by providing a path to the Hugging Face repo path and the file name. llama.cpp downloads the model checkpoint and automatically caches it. The location of the cache is defined by LLAMA_CACHE environment variable; read more about it [here](https://github.com/ggerganov/llama.cpp/pull/7826).
+Llama.cpp makes it simple to download and run a GGUF model. You just need to provide the path to the Hugging Face repository and the model file name. It will automatically download the model checkpoint and save it in a cache. The cache location is controlled by the LLAMA_CACHE environment variable.; read more about it [here](https://github.com/ggerganov/llama.cpp/pull/7826).
 
 You can install llama.cpp through brew (works on Mac and Linux), or you can build it from source. There are also pre-built binaries and Docker images that you can [check in the official documentation](https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage).
 
@@ -242,8 +243,8 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
   ```bash
   llama-server -m llama-3.2-3b-sys-log-analysis-alsate-q4_k_m.gguf
   ```
-  Note: After Executing the above command you may have to wait for 10-15 min to get the model completely activated and get running.
--  You can check the activation of the model either by visiting the link where the model is being running - Usually in the port 8080 or 8081, so visit http://127.0.0.1:8080 or http://127.0.0.1:8081, which will redirect you to a chat interface like the below snapshot.
+  Note:After running the command, you may need to wait 10-15 minutes for the model to fully load and become operational.
+- You can verify that the model is active by visiting the link where it is running—usually on port 8080 or 8081. Open http://127.0.0.1:8080 or http://127.0.0.1:8081 in your browser, and it will redirect you to a chat interface similar to the snapshot shown below.
 
   ![Screenshot 2024-12-04 220654](https://github.com/user-attachments/assets/684ccbc7-9b9a-4d88-a176-050b24ac7cb8)
 
@@ -265,11 +266,11 @@ You can install llama.cpp through brew (works on Mac and Linux), or you can buil
     ]
   }'
   ```
-  Note: if you use a curl request method, you may have to wait for 2 to 3 Minutes before you get any response depending on your current system status. you will get a     responce similar to the snapshot provided below.
+  Note: if you use a curl request method, you may have to wait for 2 to 3 Minutes before you get any response depending on your current system status. you will get a response similar to the snapshot provided below.
 
   ![Screenshot 2024-12-04 214110](https://github.com/user-attachments/assets/8dd7369b-c54b-454b-8107-8c67fc79318d)
   
-  Disclaimer* - This is only when the llm is activated in http://localhost:8080, you may need to change the link if your LLM is activated in any other address.
+  Disclaimer* - This applies only if the LLM is activated at http://localhost:8080. If your LLM is running on a different address or port, you will need to update the link accordingly.
 
 - After Successfully activating the LLM Server, Add its location where its active in the .env file located at the root.
   ```text
@@ -392,13 +393,7 @@ Use Streamlit, a Python library for creating interactive web applications, to vi
 
 ## License
 
-- For the code and streamlit application,
-  
-  [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-
-- For the Model and Dataset,
-  
-  [![Licence](https://img.shields.io/badge/LICENSE-Contributor_Consent_License(CCL)-red?style=for-the-badge)](./Model/LICENSE)
+[![Licence](https://img.shields.io/badge/LICENSE-Contributor_Consent_License(CCL)-red?style=for-the-badge)](./LICENSE)
 
 ----------------------------
 
